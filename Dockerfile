@@ -7,4 +7,6 @@ RUN mkdir -p /root/.flexget \
 
 VOLUME ["/root/.flexget"]
 
+EXPOSE 5050
+
 CMD ["/usr/local/bin/flexget", "--loglevel", "info", "daemon", "start"]
